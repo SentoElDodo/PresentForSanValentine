@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi San Valentín</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff0f3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            color: #d63384;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            max-width: 400px;
+        }
+        h1 { font-size: 1.5rem; margin-bottom: 20px; }
+        button {
+            background-color: #ff4d6d;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        button:hover { transform: scale(1.1); background-color: #c9184a; }
+        #foto-container { margin-top: 20px; display: none; }
+        img {
+            width: 100%;
+            border-radius: 15px;
+            animation: fadeIn 1.5s;
+        }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>❤️ Un pequeño mensaje para ti, para recordarte que aún te pienso :2</h1>
+        <p>Querida mía, aunque no esté presente el día de San Valentin (este año me he podido escaquear) jejejeje. 
+		Quiero que sepas que te quiero mucho y que te debo una muuy buena cena romantica para los dos ;)
+		
+	Espero con ansias que sea finde para verte, de tu querido esposo/amante/yogurin/filantropo/sexymball amor</p>
+        
+        <button onclick="mostrarFoto()">Clica si tienes huevos :V</button>
+
+        <div id="foto-container">
+            <p>Un recuerdo de nosotros disfrutando de la vida ;) ❤️</p>
+            <img src="Shrek_and_Fiona.png" alt="Nuestra foto">
+        </div>
+    </div>
+
+    <script>
+        function mostrarFoto() {
+            document.getElementById('foto-container').style.display = 'block';
+            confetti(); // Si quieres añadir efectos extra
+        }
+    </script>
+</body>
+</html>
